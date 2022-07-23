@@ -1,9 +1,8 @@
-import data from "../data.js";
 const HomeScreen = {
   render: async () => {
     const response = await fetch("http://localhost:5000/api/products", {
       header: {
-        "Content-Type": "applicarion/json",
+        "Content-Type": "application/json",
       },
     });
     if (!response || !response.ok) {
